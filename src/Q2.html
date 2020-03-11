@@ -1,0 +1,72 @@
+<div class="container">
+  <div class="header">
+    <span class="progressclose" id="abort" onclick="abort()">
+      x
+    </span>
+    <div class="slider">
+      <div class="w3-green"></div>
+      <div class="w3-greyline"></div>
+    </div>
+  </div>
+
+  <div class="body">
+    <div class="rowlayout" id="Q2">
+      <h2>Learn and Try</h2>
+      <div class="questionbox">
+          You can declare variable in JavaScript by using <kbd>let</kbd> keyword followed by variable name and its value.<br /> e.g. <kbd>let name = <span>"Ishwar"</span></kbd><br />Here <kbd> </kbd> is having value <kbd>"Ishwar"</kbd><br /><br />Declare variable <kbd>age</kbd> with value <kbd>21</kbd>
+          <br>
+          You can check the type of variable by using typeof variablename;
+          typeof name;
+          
+          Please declare a variable of type string
+
+          like var a="shrutika"
+          typeof(a);
+
+
+        </div>
+      <div class="width100">
+        <div class="box1 fleft">
+          <textarea placeholder="Type here.." autofocus></textarea>
+        </div>
+        <div class="box2 fright">
+          <p>Result:</p>
+          <div class="answerbox" id="answerbox">
+
+          </div>
+        </div>
+        <div class="btn btn-info float-left" id="runq1">Run Code</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="footer" id="footer">
+  <div class="skipcheck">
+    <div class="first">
+      <div class="btn btn-skip float-left" onclick="skipQuestion()">Skip</div>
+      <div class="float-right" id="checkq1">
+        <button class="btn btn-check db" type="submit" disabled>Check</button>
+      </div>
+
+    </div>
+    <div class="second">
+      <div class="btn btn-check float-right" onclick="nextQ()">Continue</div>
+      <div class="float-left answer">
+        <span><img class="solution" src="./img/tick.png"></span>
+        <span class="texttop"><span class="txtsize120">You are correct</span>
+        </span>
+      </div>
+    </div>
+    <div class="third">
+      <div class="btn btn-check float-right" onclick="nextQ()">Continue</div>
+      <div class="float-left answer">
+        <span><img class="solution" src="./img/wrong.png"></span>
+        <span class="texttop wrongsolution"><span class="txtsize120">Wrong Answer:</span><br />
+          <span class="textbottom"></span>You need to type your name, <span id="yname"></span>, here
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
