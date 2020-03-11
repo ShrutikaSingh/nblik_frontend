@@ -6,7 +6,7 @@ const Logo=(props)=>{
   return(
     <div className="card">
      <a href="http://localhost:3000/blog">
-     <img src={mainImg} alt="" style={{height:0}}/>
+     <img src={mainImg} alt=""/>
      </a>
     </div>
   )

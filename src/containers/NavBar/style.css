@@ -1,0 +1,22 @@
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.navbarMenu {
+  margin: 10px 0;
+  margin-left: 25%;
+
+}
+.navbarMenu a{
+  display: inline-block;
+  margin: 0 10px;
+  color:  #7b99e5;
+  font-size: 15px;
+  letter-spacing: 1.2px;
+}
+
+.navbarMenu a:hover{
+  color:  #4762A9;
+}

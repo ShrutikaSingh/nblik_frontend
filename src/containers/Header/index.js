@@ -1,10 +1,14 @@
 import React from 'react';
 import './style.css';
+import Logo from '../Logo/index';
 
 const Header = props =>{
     return(
     <div className="header">
-      <h1>Header</h1>
+    <div className="headerSearch">
+      <img src={require('../../images/icons/search.png')} alt="Search"/>
+      <input type="text" placeholder="search"/>
+    </div>
       <nav className="headerMenu">
         <a href="http://localhost:3000/blog">Blog</a>
         <a href="http://localhost:3000/discussion">Discussions</a>

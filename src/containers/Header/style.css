@@ -1,9 +1,15 @@
 .header{
   display: flex;
   justify-content: space-between;
+  padding: 0px 0 0 20%;
+}
+.headerSearch{
+  justify-content: space-between;
+  display: flex;
+
 }
 .headerMenu {
-  margin: 10px 0;
+  margin: 0px 2%;
 }
 .headerMenu a{
   display: inline-block;
