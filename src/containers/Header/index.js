@@ -1,16 +1,24 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './style.css';
 import Logo from '../Logo/index';
 import SearchImg from '../../images/icons/search.png';
 
 
 const Header = props =>{
+
+const [search, setSerach]= useState(false);
+
+const searchSubmit = (e) => {
+  e.preventDefault();
+  alert("submitted");
+}
+
     return(
     <div className="header">
       <div className="headerSearch">
-        <form>
-          <img src={SearchImg} alt="Search" style={{height:45}}/>&nbsp;&nbsp;
-          <input type="text" className="input" placeholder="Search anything here!!"/>
+        <form onSubmit={searchSubmit}>
+          <input type="text" className="input" placeholder="Search anything here!!"/>&nbsp;&nbsp;
+          <img src={SearchImg} className="searchIcon" alt="Search" style={{height:45}}/>
         </form>
       </div>
       <nav className="headerMenu">

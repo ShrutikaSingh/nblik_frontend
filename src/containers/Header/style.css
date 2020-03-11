@@ -10,9 +10,12 @@
 
 .headerSearch input {
   border-color: #7b99e5;
-  margin-right: 16px;
   font-size: 20px;
   width:600px;
+}
+
+.searchIcon{
+  cursor: pointer;
 }
 
 .headerMenu a{
