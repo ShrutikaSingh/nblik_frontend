@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
-import axios from 'axios';
 
-  class Upload extends React.Component {
+
+  class Upload extends Component {
 /*  constructor(){
     super();
     this.state={

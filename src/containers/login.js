@@ -1,9 +1,8 @@
 import React,{Component} from 'react';
-import { Button, Form, FormGroup, Label, Input, Container, Row, Col } from 'reactstrap';
+import { Form, FormGroup, Label, Input, Container, Row, Col } from 'reactstrap';
 import login_img from '../images/login_img.png';
 import speech_bubble from '../images/speech_bubble.png';
 import axios from 'axios';
-import fileUpload from './fileupload.js';
 class Login extends Component{
   constructor(){
     super()
@@ -31,7 +30,7 @@ async handleSubmit(e){
     console.log(this.state);
     const { email, password }= this.state
     const form =await axios.post('/api/form', {
-      email:this.state.email,
+      email:email,
       password:password
     })
     .then(res=>{
@@ -52,7 +51,7 @@ async handleSubmit(e){
       <Col md={4}></Col>
       <Col md={4}>
         <div className="text-center">
-          <img src={login_img} height="100px"/>
+          <img src={login_img} alt="" height="100px"/>
         </div>
         <Form onSubmit={this.handleSubmit} >
           <FormGroup>
@@ -77,7 +76,7 @@ async handleSubmit(e){
     <Row>
     <Col md={7}></Col>
     <Col md={1}>
-      <img src={speech_bubble} height="140px"/>
+      <img src={speech_bubble} alt="" height="140px"/>
     </Col>
     <Col md={4}></Col>
     </Row>

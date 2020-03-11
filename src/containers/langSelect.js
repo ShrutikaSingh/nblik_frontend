@@ -1,10 +1,8 @@
 import React,{Component} from 'react';
-import { Button, Form, FormGroup, Label, Input, Container, Row, Col, Card, CardBody, CardTitle, CardText } from 'reactstrap';
+import { Button, Form, FormGroup, Label, Input, Container, Row, Col, Card, CardBody, CardText } from 'reactstrap';
 import FetchText from './fetch_text';
-import DropdownLang from './dropdown_lang';
 import login_img from '../images/langselect.jpg';
 import axios from 'axios';
-import fileUpload from './fileupload.js'
 class Login extends Component{
   constructor(){
     super()
@@ -33,7 +31,7 @@ async handleSubmit(e){
     console.log(this.state);
     const { email, password }= this.state
     const form =await axios.post('/api/form', {
-      email:this.state.email,
+      email:email,
       password:password
     })
     .then(res=>{
@@ -64,7 +62,7 @@ async handleSubmit(e){
       </Col>
       <Col md={6}>
         <div className="text-center">
-          <img src={login_img} height="200px"/>
+          <img src={login_img} alt="" height="200px"/>
         </div>
 
         <Form onSubmit={this.handleSubmit} >

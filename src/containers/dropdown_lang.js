@@ -1,7 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'react-select/dist/react-select.min.css';
 import React,{Component} from 'react';
-import {FormControl} from 'react-bootstrap';
 import Select from 'react-select';
 
 

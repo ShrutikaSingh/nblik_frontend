@@ -5,14 +5,15 @@ import LoginPage from '../containers/login';
 import FileUpload from '../containers/fileupload';
 import LangSelect from '../containers/langSelect';
 import LangDropDown from '../containers/dropdown_lang';
-
+import Home from '../containers/Home/index';
 
 class Routes extends Component{
 render(){
   return(
     <div>
     <Router>
-      <Route exact path="/" component = {LoginPage}/>
+      <Route exact path="/" component = {Home}/>
+      <Route exact path="/login" component = {LoginPage}/>
       <Route exact path="/lang" component = {LangDropDown}/>
       <Route exact path="/upload" component = {FileUpload}/>
       <Route exact path="/select" component = {LangSelect}/>
