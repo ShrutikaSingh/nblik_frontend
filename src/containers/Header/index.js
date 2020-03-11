@@ -6,11 +6,15 @@ import SearchImg from '../../images/icons/search.png';
 
 const Header = props =>{
 
-const [search, setSerach]= useState(false);
+const [search, setSearch]= useState(false);
 
 const searchSubmit = (e) => {
   e.preventDefault();
   alert("submitted");
+}
+
+const openSearch = () =>{
+  setSearch(true);
 }
 
     return(
@@ -18,7 +22,7 @@ const searchSubmit = (e) => {
       <div className="headerSearch">
         <form onSubmit={searchSubmit}>
           <input type="text" className="input" placeholder="Search anything here!!"/>&nbsp;&nbsp;
-          <img src={SearchImg} className="searchIcon" alt="Search" style={{height:45}}/>
+          <img onClick={openSearch} src={SearchImg} className="searchIcon" alt="Search" style={{height:45}}/>
         </form>
       </div>
       <nav className="headerMenu">
