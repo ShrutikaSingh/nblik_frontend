@@ -4,13 +4,17 @@
   padding: 0px 0 0 20%;
 }
 .headerSearch{
+  display: inline-block;
   justify-content: space-between;
-  display: flex;
+}
 
+.headerSearch input {
+  border-color: #7b99e5;
+  margin-right: 16px;
+  font-size: 20px;
+  width:600px;
 }
-.headerMenu {
-  margin: 0px 2%;
-}
+
 .headerMenu a{
   display: inline-block;
   margin: 0 10px;
