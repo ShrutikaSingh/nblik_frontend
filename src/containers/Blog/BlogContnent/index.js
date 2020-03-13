@@ -1,14 +1,14 @@
 import React from 'react'
 import './style.css';
-import Card from '../UI/Card/index.js';
+import Post from '../Blog/Post/index.js';
 
 
 const BarSection=(props)=>{
   return(
     <div>
-      <Card>
+      <Post>
         {props.children}
-      </Card>
+      </Post>
     </div>
   )
 }

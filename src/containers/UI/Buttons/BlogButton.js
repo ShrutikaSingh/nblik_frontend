@@ -9,9 +9,9 @@ const Button= styled.button`
   padding: 0.2em 2em;
   border: 2px solid #374D89;
   border-radius: 45px;
-  color:${props => props.page=="blog" ? "white" : "palevioletred"};
-  
-  ${props => props.page=="blog" && css `
+  color:${props => props.page==="blog" ? "white" : "palevioletred"};
+
+  ${props => props.page==="blog" && css `
       font-size:12px;
       background: #237eed;
       border-radius: 1px;
