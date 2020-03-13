@@ -1,7 +1,6 @@
 import React from 'react';
 import './style.css';
 import Logo from '../Logo/index';
-import SearchBar from '../SearchBar/index';
 import BlogButton from '../UI/Buttons/BlogButton';
 
 const Home =(props)=>{
@@ -10,9 +9,7 @@ const Home =(props)=>{
       <div className="text-center">
         <Logo/>
         <h1> NbliK- Network of Knowledge </h1>
-
         <BlogButton data="NBLIK" page="home"/>
-
       </div>
       </div>
     )
