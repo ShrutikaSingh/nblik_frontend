@@ -1,5 +1,4 @@
 import React, { Fragment} from 'react';
-import './style.css';
 import Header from '../Header/index';
 import NavBar from '../NavBar/index';
 import Category from '../Category/index';
@@ -8,10 +7,20 @@ import Post from "../Blog/Post/index";
 const Blog=props=> {
     return(
       <Fragment>
-        <Header/>
-        <Post/>
-        <NavBar/>
-        <Category/>
+          <Header/>
+            <div class="row">
+                <div class="col-sm-2">
+                  <Category/>
+                </div>
+                <div class="col-sm-8">
+                  <Post/>
+                </div>
+                <div class="col-sm-2">
+                  <h3>Column 3</h3>
+                  <p>Lorem ipsum dolor..</p>
+                </div>
+          <NavBar/>
+          </div>
       </Fragment>
   )
   }
