@@ -11,10 +11,14 @@ class Category extends Component {
       <div>
       <h1>Categories</h1>
       <ul>
-      {this.items.map(item=><li>{item}</li>)}
+      {
+        this.items.map((item,id) => {return(
+        <li key={id}>{item}</li>)
+        })
+      }
       </ul>
       </div>
-)
+    )
   }
 }
 
