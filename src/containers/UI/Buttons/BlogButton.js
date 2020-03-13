@@ -1,27 +1,34 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './style.css';
-import styled from 'styled-components';
+import styled, {css} from 'styled-components';
 import colors from '../../../styles/global';
-console.log(colors);
-
-console.log(colors.main)
 const Button= styled.button`
   background: ${colors.main};
-  color: white;
   font-size: 2em;
   margin: 1em;
   padding: 0.2em 2em;
   border: 2px solid #374D89;
-  border-radius: 3px;
+  border-radius: 45px;
+  color:${props => props.page=="blog" ? "white" : "palevioletred"};
+  
+  ${props => props.page=="blog" && css `
+      font-size:12px;
+      background: #237eed;
+      border-radius: 1px;
+      border:0px;
+  ` }
 `;
 
-const BlogButton =(props)=>{
+class BlogButton extends Component{
+  render(){
     return(
       <div>
-      <Button>NBLIK</Button>
+        <Button page={this.props.page}>{this.props.data}</Button>
       </div>
     )
 }
+}
+
 
 
 export default BlogButton;
