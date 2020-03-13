@@ -1,10 +1,12 @@
+.row{
+  margin-left: 10px;
+  margin-bottom: 15px;
+  margin-top: -20px;
+}
 .header{
-  display: flex;
   justify-content: space-between;
-  padding: 0px 0 0 20%;
 }
 .headerSearch{
-  display: inline-block;
   justify-content: space-between;
 }
 
