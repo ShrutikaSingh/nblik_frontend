@@ -1,9 +1,12 @@
 import React from 'react';
 import './style.css';
 import styled from 'styled-components';
+import colors from '../../../styles/global';
+console.log(colors);
 
+console.log(colors.main)
 const Button= styled.button`
-  background:#374D89;
+  background: ${colors.main};
   color: white;
   font-size: 2em;
   margin: 1em;
