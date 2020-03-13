@@ -1,1 +1,13 @@
+.card-header{
+  font-family: 'Pacifico';
+  color:"#374D89";
+}
+.card-subtitle{
+  font-family: 'Abril Fatface';
+  font-size: 15px;
+}
+.card-text{
+  font-family: 'Girassol';
+  font-size: 20px;
 
+}
