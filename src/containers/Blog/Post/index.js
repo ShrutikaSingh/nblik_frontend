@@ -11,34 +11,45 @@ class Post extends Component{
     }
   }
 render () {
-  console.log(this.state.posts[0])
   return(
-    <div className="card">
-    {this.state.posts.map((post,i)=>{return(
-      <div key={i}>
-      <div className="card-header">
-        {this.state.posts[i].category}
-      </div>
-      <div >
-          {this.state.posts[i].title}
-      </div>
-      <div>
-          {this.state.posts[i].username}
-      </div>
-      <div>
-          {this.state.posts[i].postbody}
-      </div>
-      <div>
-          {this.state.posts[i].likes}
-          <BlogButton data="Like" page="blog"/>
-          <BlogButton data="Share" page="blog"/>
-      </div>
-      <div>
-          {this.state.posts[i].postbody}
-      </div>
-      </div>
-    )})}
+    <div>
+        {this.state.posts.map((post,i)=>{return(
+          <div key={i}>
+          <div className="row">
+          <div className="card-body">
+              <div className="card">
+                    <h4 className="card-header">
+                        {this.state.posts[i].title}
+                    </h4>
+                    <div className=" card-body">
+                    <div class="card-title" style={{color:"#374D89"}}>
+                        {this.state.posts[i].category}
+                    </div>
+
+                          <div class="card-subtitle text-muted">
+                              {this.state.posts[i].username}
+                          </div>
+                          <div class="card-text">
+                              {this.state.posts[i].postbody}
+                          </div>
+                          <br></br>
+                          <br></br>
+                          <div className="row ">
+                            {this.state.posts[i].likes + " likes"}
+                            <BlogButton data="Like" page="blog"/>
+
+                            {this.state.posts[i].views + " views"}
+                            <BlogButton data="Share" page="blog"/>
+                            {this.state.posts[i].comments + " comments"}
+                          </div>
+                    </div>
+                </div>
+                </div>
+              </div>
+              </div>
+        )})}
     </div>
+
   )
 }
 }
