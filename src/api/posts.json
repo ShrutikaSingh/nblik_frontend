@@ -1,8 +1,28 @@
-[
-"Arts","Automobiles","Books&Literature","Business","ComputerScience" ,"Design",
-"Education","Energy","Entertainment","Entrepreneurship","Family & Parenting","Fashion",
-"Finance","Flora & Fauna","Food & cooking","Gear & Gadgets","Geography",
-"Health","History","Hobbies & Fun","Incredible India","Kids World",
-"Life Style","Movies & TV Series","News & Journalism","Others","Politics","Psychology & Philosophy",
-"Relationship","Reviews","Science & Tech.","Space","Sports","Travel","Writing","World"
-]
+[{
+    "id": 1,
+    "category":"Entrepreneurship",
+    "title":"Startup Life",
+    "username": "Rahul",
+    "postbody": "A kickass young founding team *in* Bangalore is running on a burn",
+    "likes": 23,
+    "views": 0,
+    "comments": 1
+}, {
+    "id": 2,
+    "category":"movies",
+    "title":"Terminator: Dark Fate’ Review: It’s Hasta la Vista All Over Again",
+    "username": "Nikola",
+    "postbody": "There are a number of reasons to like",
+    "likes": 23,
+    "views": 0,
+    "comments": 1
+},{
+    "id": 3,
+    "category":"Psychology & Philosophy",
+    "title":"Toy",
+    "username": "Shrutika",
+    "postbody": "I had a toy when I was young. It was broken. We couldn't buy a new one",
+    "likes": 23,
+    "views": 0,
+    "comments": 1
+}]
